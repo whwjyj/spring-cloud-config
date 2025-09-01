@@ -23,25 +23,11 @@ springdoc:
 eureka:
   instance:
     prefer-ip-address: true
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defalue-znoe: http://localhost:8761/eureka/
 jwt:
   issuer: https://accounts.beyond.com
   secret: "{cipher}9aa3bc289e2ef57fa9b4ae86b440811b888f463c1ad3ec0e9bed1de8fe9a5609ef6b5a852f4c5ba2e373fb460046cf199b2f57661df6edd5b5da27e00c5abb4f"
