@@ -2,8 +2,8 @@ spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
     url: jdbc:mariadb://localhost:3306/web
-    username: "{cipher}c38e6a95f96acb7f99de21ceefa1f9267165f404562e7ed27cdd49f70d2b6550"
-    password: "{cipher}905a2bbac819946d18ec3038ad8929fb978c1563eb5da95785c47199f687b8b2"
+    username: "{cipher}9b9260251134ec3b38e0bf9697d8b8e18ab1944346a23abd9d8a7d3fae90f326"
+    password: "{cipher}0c889f6a014d1614eccd0b8ccabb4c41fb59fa72bcdb271529d84a21b84cea7e"
   data:
     redis:
       host: localhost
