@@ -11,14 +11,14 @@ eureka:
 spring:
   cloud:
     gateway:
-#      요청을 적절한 서비스로 전달하기 위한 설정
+      # 요청을 적절한 서비스로 전달하기 위한 설정
       routes:
-      - id: department-service
-#        요청이 라우팅될 때 실제 서비스의 주소를 의미한다.
-        uri: lb://department-service
-#        라우팅 조건을 정의한다.
-        predicates:
-          - Path=/department/**
-#          경로 재작성 필터로 요청 경로를 다른 경로로 변경한다.
-        filters:
-          - RewritePath=/department/(?<Path>.*), /$\{path}
+        - id: university-service
+          # 요청이 라우팅될 때 실제 서비스의 주소를 의미한다.
+          uri: lb://department-service
+          # 라우팅 조건을 정의한다.
+          predicates:
+            - Path=/department/**
+          # 경로 재작성 필터로 요청 경로를 다른 경로로 변경한다.
+          filters:
+            - RewritePath= /department/(?<path>.*), /$\{path}
