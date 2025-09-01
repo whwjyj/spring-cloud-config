@@ -21,3 +21,5 @@ eureka:
     fetch-registry: true
     service-url:
       defalue-znoe: http://localhost:8761/eureka/
+department-service:
+  base-url: http://department-service/api/v1/department-service/departments/
